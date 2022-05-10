@@ -11,13 +11,17 @@ catalog {
     }
 }
 
+repositories {
+
+}
+
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            from(components["versionCatalog"])
             groupId = Configs.GROUP_ID
             artifactId = Configs.Catalog.ARTIFACT_ID
             version = Configs.VERSION
+            from(components["versionCatalog"])
         }
     }
 }
