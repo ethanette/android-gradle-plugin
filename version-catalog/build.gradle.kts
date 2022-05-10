@@ -14,7 +14,7 @@ catalog {
 publishing {
     repositories {
         publications {
-            create<MavenPublication>("release") {
+            create<MavenPublication>("maven") {
                 from(components["versionCatalog"])
                 groupId = Configs.GROUP_ID
                 artifactId = Configs.Catalog.ARTIFACT_ID
