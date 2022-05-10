@@ -55,3 +55,16 @@ gradlePlugin {
         }
     }
 }
+
+publishing {
+    repositories {
+        maven {
+            name = "GithubPackages"
+            setUrl("https://maven.pkg.github.com/ethanette/${rootProject.name}")
+            credentials {
+                username = System.getenv("GITHUB_USERNAME")
+                password = System.getenv("GITHUB_ACCESS_TOKEN")
+            }
+        }
+    }
+}

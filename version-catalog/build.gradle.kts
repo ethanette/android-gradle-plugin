@@ -15,9 +15,19 @@ catalog {
 }
 
 publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            from(components["versionCatalog"])
+    repositories {
+        publications {
+            create<MavenPublication>("maven") {
+                from(components["versionCatalog"])
+            }
+        }
+        maven {
+            name = "GithubPackages"
+            setUrl("https://maven.pkg.github.com/ethanette/${rootProject.name}")
+            credentials {
+                username = System.getenv("GITHUB_USERNAME")
+                password = System.getenv("GITHUB_ACCESS_TOKEN")
+            }
         }
     }
 }
