@@ -3,6 +3,9 @@ plugins {
     `maven-publish`
 }
 
+group = Configs.GROUP_ID
+version = Configs.VERSION
+
 catalog {
     versionCatalog {
         from(files("../gradle/libs.versions.toml"))
@@ -11,16 +14,9 @@ catalog {
     }
 }
 
-repositories {
-
-}
-
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = Configs.GROUP_ID
-            artifactId = Configs.Catalog.ARTIFACT_ID
-            version = Configs.VERSION
             from(components["versionCatalog"])
         }
     }
