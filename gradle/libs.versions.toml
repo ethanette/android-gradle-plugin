@@ -70,7 +70,9 @@ androidXCameraView = "1.0.0-alpha31"
 androidXTest = "1.4.0"
 # androidx.test.ext
 androidXTestExt = "1.1.2"
-# https://mvnrepository.com/artifact/androidx.benchmark
+# androidx.test.espresso
+androidXEspresso = "3.4.0"
+# androidx.benchmark
 androidXBenchmark = "1.0.0"
 
 # com.github.bumptech.glide
@@ -200,6 +202,8 @@ androidx-test-runner = { group = "androidx.test", name = "runner", version.ref =
 androidx-test-coreKtx = { group = "androidx.test", name = "core-ktx", version.ref = "androidXTest" }
 # https://mvnrepository.com/artifact/androidx.test.ext
 androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidXTestExt" }
+# https://mvnrepository.com/artifact/androidx.test.espresso
+androidx-test-espresso-espressoCore = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidXEspresso" }
 # https://mvnrepository.com/artifact/androidx.benchmark
 androidx-benchmark-benchmarkGradle = { group = "androidx.benchmark", name = "benchmark-gradle-plugin", version.ref = "androidXBenchmark" }
 androidx-benchmark-benchmarkJunit4 = { group = "androidx.benchmark", name = "benchmark-junit4", version.ref = "androidXBenchmark" }
