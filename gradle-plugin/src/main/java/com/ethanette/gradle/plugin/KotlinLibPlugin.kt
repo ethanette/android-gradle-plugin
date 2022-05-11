@@ -24,8 +24,8 @@ class KotlinLibPlugin : BaseConfigPlugin() {
     }
 
     override fun PluginContainer.applyPlugins(project: Project) {
-        apply(project.libs.plugins.java.library.get().pluginId)
-        apply(project.libs.plugins.kotlin.library.get().pluginId)
+        apply(project.libs.plugins.javaLibrary.pluginId)
+        apply(project.libs.plugins.kotlin.pluginId)
     }
 
 }

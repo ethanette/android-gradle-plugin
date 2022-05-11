@@ -13,20 +13,20 @@ dependencies {
      * https://github.com/gradle/gradle/issues/15383
      */
     implementation(files(libs.javaClass.superclass.protectionDomain.codeSource.location))
-    implementation(libs.android.gradle)
-    implementation(libs.kotlin.gradle)
-    implementation(libs.dokka.gradle)
+    implementation(libs.android.tools.build.gradle)
+    implementation(libs.jetbrains.kotlin.kotlinGradle)
+    implementation(libs.jetbrains.dokka.dokkaGradle)
 }
 
 // https://docs.gradle.org/current/userguide/publishing_gradle_plugins.html
 gradlePlugin {
     plugins {
         create("android-app") {
-            id = libs.plugins.ethanette.android.app.get().pluginId
+            id = libs.plugins.ethanette.androidApp.get().pluginId
             implementationClass = "com.ethanette.gradle.plugin.AndroidAppPlugin"
         }
         create("android-lib") {
-            id = libs.plugins.ethanette.android.lib.get().pluginId
+            id = libs.plugins.ethanette.androidLib.get().pluginId
             implementationClass = "com.ethanette.gradle.plugin.AndroidLibPlugin"
         }
         create("benchmark") {
@@ -46,7 +46,7 @@ gradlePlugin {
             implementationClass = "com.ethanette.gradle.plugin.HiltPlugin"
         }
         create("kotlin-lib") {
-            id = libs.plugins.ethanette.kotlin.lib.get().pluginId
+            id = libs.plugins.ethanette.kotlinLib.get().pluginId
             implementationClass = "com.ethanette.gradle.plugin.KotlinLibPlugin"
         }
         create("publish") {

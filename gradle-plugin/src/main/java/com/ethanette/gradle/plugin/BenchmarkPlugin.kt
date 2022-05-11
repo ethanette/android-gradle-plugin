@@ -29,7 +29,7 @@ class BenchmarkPlugin : BaseConfigPlugin() {
         androidTestImplementation(project.libs.androidx.test.runner)
         androidTestImplementation(project.libs.androidx.test.ext.junit)
         androidTestImplementation(project.libs.junit)
-        androidTestImplementation(project.libs.benchmark.junit4)
+        androidTestImplementation(project.libs.androidx.benchmark.benchmarkJunit4)
     }
 
 }

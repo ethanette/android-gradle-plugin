@@ -10,7 +10,7 @@ class ComposePlugin : BaseConfigPlugin() {
         buildFeatures.compose = true
 
         composeOptions {
-            kotlinCompilerExtensionVersion = project.libs.versions.compose.get()
+            kotlinCompilerExtensionVersion = project.libs.versions.androidXCompose.get()
         }
 
         packagingOptions {
@@ -22,23 +22,23 @@ class ComposePlugin : BaseConfigPlugin() {
     }
 
     override fun DependencyHandlerScope.addDependencies(project: Project) {
-        implementation(project.libs.compose.ui)
-        debugImplementation(project.libs.compose.ui.tooling)
+        implementation(project.libs.androidx.compose.ui.ui)
+        debugImplementation(project.libs.androidx.compose.ui.uiTooling)
 
-        implementation(project.libs.compose.ui.tooling.preview)
-        implementation(project.libs.compose.material)
-        implementation(project.libs.compose.material.icon)
+        implementation(project.libs.androidx.compose.ui.uiToolingPreview)
+        implementation(project.libs.androidx.compose.material.material)
+        implementation(project.libs.androidx.compose.material.materialIconsExtended)
 
         // Issue not showing compose preview
-        implementation(project.libs.savedstate)
-        implementation(project.libs.appcompat)
+        implementation(project.libs.androidx.savedstate.savedstate)
+        implementation(project.libs.androidx.appcompat.appcompat)
 
-        implementation(project.libs.accompanist.insets)
-        implementation(project.libs.accompanist.systemuicontroller)
+        implementation(project.libs.google.accompanist.accompanistInsets)
+        implementation(project.libs.google.accompanist.accompanistSystemuicontroller)
 
-        androidTestImplementation(project.libs.compose.ui.test)
-        androidTestImplementation(project.libs.compose.ui.test.junit4)
-        androidTestImplementation(project.libs.compose.ui.test.manifest)
+        androidTestImplementation(project.libs.androidx.compose.ui.uiTest)
+        androidTestImplementation(project.libs.androidx.compose.ui.uiTestJunit4)
+        androidTestImplementation(project.libs.androidx.compose.ui.uiTestManifest)
     }
 
 }

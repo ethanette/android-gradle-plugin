@@ -23,8 +23,8 @@ class PublishPlugin : BaseConfigPlugin() {
     }
 
     override fun PluginContainer.applyPlugins(project: Project) {
-        apply(project.libs.plugins.maven.publish.pluginId)
-        apply(project.libs.plugins.dokka.pluginId)
+        apply(project.libs.plugins.mavenPublish.pluginId)
+        apply(project.libs.plugins.jetbrains.dokka.pluginId)
     }
 
     private fun configureDokka(project: Project) {

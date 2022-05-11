@@ -17,8 +17,8 @@ class AndroidAppPlugin : BaseConfigPlugin() {
 
     override fun PluginContainer.applyPlugins(project: Project) {
         apply(project.libs.plugins.android.application.pluginId)
-        apply(project.libs.plugins.kotlin.android.pluginId)
-        apply(project.libs.plugins.kotlin.kapt.pluginId)
+        apply(project.libs.plugins.kotlinAndroid.pluginId)
+        apply(project.libs.plugins.kotlinKapt.pluginId)
     }
 
     override fun BaseExtension.configAndroid(project: Project) {
@@ -54,8 +54,8 @@ class AndroidAppPlugin : BaseConfigPlugin() {
         }
 
     override fun DependencyHandlerScope.addDependencies(project: Project) {
-        implementation(project.libs.kotlin.stdlib)
-        implementation(project.libs.kotlinx.coroutines)
+        implementation(project.libs.jetbrains.kotlin.kotlinStdlibJdk8)
+        implementation(project.libs.jetbrains.kotlinx.kotlinxCoroutinesCore)
 
         testImplementation(project.libs.junit)
         testImplementation(project.libs.google.truth)
