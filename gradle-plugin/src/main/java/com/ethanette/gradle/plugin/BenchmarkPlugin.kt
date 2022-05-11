@@ -28,7 +28,7 @@ class BenchmarkPlugin : BaseConfigPlugin() {
     override fun DependencyHandlerScope.addDependencies(project: Project) {
         androidTestImplementation(project.libs.androidx.test.runner)
         androidTestImplementation(project.libs.androidx.test.ext.junit)
-        androidTestImplementation(project.libs.junit)
+        androidTestImplementation(project.libs.junit.junit)
         androidTestImplementation(project.libs.androidx.benchmark.benchmarkJunit4)
     }
 

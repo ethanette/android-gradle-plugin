@@ -17,7 +17,7 @@ class AndroidAppPlugin : BaseConfigPlugin() {
 
     override fun PluginContainer.applyPlugins(project: Project) {
         apply(project.libs.plugins.android.application.pluginId)
-        apply(project.libs.plugins.kotlinAndroid.pluginId)
+        apply(project.libs.plugins.jetbrains.kotlinAndroid.pluginId)
         apply(project.libs.plugins.kotlinKapt.pluginId)
     }
 
@@ -57,8 +57,8 @@ class AndroidAppPlugin : BaseConfigPlugin() {
         implementation(project.libs.jetbrains.kotlin.kotlinStdlibJdk8)
         implementation(project.libs.jetbrains.kotlinx.kotlinxCoroutinesCore)
 
-        testImplementation(project.libs.junit)
-        testImplementation(project.libs.google.truth)
+        testImplementation(project.libs.junit.junit)
+        testImplementation(project.libs.google.truth.truth)
 
         androidTestImplementation(project.libs.androidx.test.core)
     }

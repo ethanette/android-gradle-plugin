@@ -6,10 +6,11 @@ import org.gradle.kotlin.dsl.DependencyHandlerScope
 
 class FirebasePlugin : BaseConfigPlugin() {
 
+
     override fun PluginContainer.applyPlugins(project: Project) {
-        apply(project.libs.plugins.google.gms.googleServices.pluginId)
-        apply(project.libs.plugins.google.firebase.firebasePerf.pluginId)
-        apply(project.libs.plugins.google.firebase.crashlytics.pluginId)
+        apply(project.libs.plugins.google.googleServices.pluginId)
+        apply(project.libs.plugins.google.firebasePerf.pluginId)
+        apply(project.libs.plugins.google.firebaseCrashlytics.pluginId)
     }
 
     override fun DependencyHandlerScope.addDependencies(project: Project) {

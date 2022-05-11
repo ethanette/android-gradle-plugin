@@ -6,6 +6,7 @@ plugins {
 group = Configs.GROUP_ID
 version = Configs.VERSION
 
+@Suppress("UnstableApiUsage")
 catalog {
     versionCatalog {
         from(files("../gradle/libs.versions.toml"))

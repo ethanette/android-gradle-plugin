@@ -17,7 +17,7 @@ class AndroidLibPlugin : BaseConfigPlugin() {
 
     override fun PluginContainer.applyPlugins(project: Project) {
         apply(project.libs.plugins.android.library.pluginId)
-        apply(project.libs.plugins.kotlinAndroid.pluginId)
+        apply(project.libs.plugins.jetbrains.kotlinAndroid.pluginId)
         apply(project.libs.plugins.kotlinKapt.pluginId)
     }
 

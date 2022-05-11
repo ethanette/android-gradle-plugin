@@ -241,15 +241,16 @@ ethanette-hilt = { id = "com.ethanette.hilt" }
 ethanette-publish = { id = "com.ethanette.publish" }
 ethanette-firebase = { id = "com.ethanette.firebase" }
 
-kotlinAndroid = { id = "kotlin-android" }
-kotlinKapt = { id = "kotlin-kapt" }
 kotlin = { id = "kotlin" }
+kotlinKapt = { id = "kotlin-kapt" }
 javaLibrary = { id = "java-library" }
 mavenPublish = { id = "maven-publish" }
+jetbrains-kotlinAndroid = { id = "org.jetbrains.kotlin.android" }
+jetbrains-kotlinAndroidExtensions = { id = "org.jetbrains.kotlin.android.extensions" }
 jetbrains-dokka = { id = "org.jetbrains.dokka" }
 android-application = { id = "com.android.application" }
 android-library = { id = "com.android.library" }
-dagger-hilt-Android = { id = "dagger.hilt.android.plugin" }
-google-gms-googleServices = { id = "com.google.gms.google-services" }
-google-firebase-crashlytics = { id = "com.google.firebase.crashlytics" }
-google-firebase-firebasePerf = { id = "com.google.firebase.firebase-perf" }
+dagger-hiltAndroid = { id = "dagger.hilt.android.plugin" }
+google-googleServices = { id = "com.google.gms.google-services" }
+google-firebaseCrashlytics = { id = "com.google.firebase.crashlytics" }
+google-firebasePerf = { id = "com.google.firebase.firebase-perf" }

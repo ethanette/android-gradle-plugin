@@ -7,7 +7,7 @@ import org.gradle.kotlin.dsl.DependencyHandlerScope
 class HiltPlugin : BaseConfigPlugin() {
 
     override fun PluginContainer.applyPlugins(project: Project) {
-        apply(project.libs.plugins.dagger.hilt.android.pluginId)
+        apply(project.libs.plugins.dagger.hiltAndroid.pluginId)
     }
 
     override fun DependencyHandlerScope.addDependencies(project: Project) {
