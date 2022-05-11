@@ -30,7 +30,7 @@ googleAccompanist = "0.24.1-alpha"
 
 # com.android
 # com.android.tools.build
-androidToolsBuildGradle = "7.1.2"
+androidToolsBuildGradle = "7.1.3"
 # com.android.tools
 androidToolsdesugarJdkLibs = "1.1.5"
 
