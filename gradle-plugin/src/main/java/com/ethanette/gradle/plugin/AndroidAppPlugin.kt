@@ -60,7 +60,8 @@ class AndroidAppPlugin : BaseConfigPlugin() {
         testImplementation(project.libs.junit.junit)
         testImplementation(project.libs.google.truth.truth)
 
-        androidTestImplementation(project.libs.androidx.test.core)
+        androidTestImplementation(project.libs.androidx.test.ext.junit)
+        androidTestImplementation(project.libs.androidx.test.espresso.espressoCore)
     }
 
 }
