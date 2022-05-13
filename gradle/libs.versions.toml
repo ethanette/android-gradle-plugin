@@ -1,6 +1,6 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub:bom_import
 [versions]
-ethanetteGradle = "1.0.0"
+ethanetteGradle = "0.0.0"
 
 # org.jetbrains
 # org.jetbrains.kotlin
@@ -236,25 +236,25 @@ squareup-okhttp3-mockwebserver = { group = "com.squareup.okhttp3", name = "mockw
 junit-junit = { group = "junit", name = "junit", version.ref = "junit" }
 
 [plugins]
-ethanette-androidApp = { id = "com.ethanette.android-app" }
-ethanette-androidLib = { id = "com.ethanette.android-lib" }
-ethanette-kotlinLib = { id = "com.ethanette.kotlin-lib" }
-ethanette-benchmark = { id = "com.ethanette.benchmark" }
-ethanette-compose = { id = "com.ethanette.compose" }
-ethanette-hilt = { id = "com.ethanette.hilt" }
-ethanette-publish = { id = "com.ethanette.publish" }
-ethanette-firebase = { id = "com.ethanette.firebase" }
+ethanette-androidApp = { id = "com.ethanette.android-app", version = "ethanetteGradle" }
+ethanette-androidLib = { id = "com.ethanette.android-lib", version = "ethanetteGradle" }
+ethanette-kotlinLib = { id = "com.ethanette.kotlin-lib", version = "ethanetteGradle" }
+ethanette-benchmark = { id = "com.ethanette.benchmark", version = "ethanetteGradle" }
+ethanette-compose = { id = "com.ethanette.compose", version = "ethanetteGradle" }
+ethanette-hilt = { id = "com.ethanette.hilt", version = "ethanetteGradle" }
+ethanette-publish = { id = "com.ethanette.publish", version = "ethanetteGradle" }
+ethanette-firebase = { id = "com.ethanette.firebase", version = "ethanetteGradle" }
 
 kotlin = { id = "kotlin" }
 kotlinKapt = { id = "kotlin-kapt" }
 javaLibrary = { id = "java-library" }
 mavenPublish = { id = "maven-publish" }
-jetbrains-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "jetbrainsKotlin" }
-jetbrains-kotlinAndroidExtensions = { id = "org.jetbrains.kotlin.android.extensions", version.ref = "jetbrainsKotlin" }
-jetbrains-dokka = { id = "org.jetbrains.dokka", version.ref = "jetbrainsDokka" }
-android-application = { id = "com.android.application", version.ref = "androidToolsBuildGradle" }
-android-library = { id = "com.android.library", version.ref = "androidToolsBuildGradle" }
-dagger-hiltAndroid = { id = "dagger.hilt.android.plugin", version.ref = "googleDagger" }
-google-googleServices = { id = "com.google.gms.google-services", version.ref = "googleGms" }
-google-firebasePerf = { id = "com.google.firebase.firebase-perf", version.ref = "googleFirebasePref" }
-google-firebaseCrashlytics = { id = "com.google.firebase.crashlytics", version.ref = "googleFirebaseCrashlyticsGradle" }
+jetbrains-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version = "jetbrainsKotlin" }
+jetbrains-kotlinAndroidExtensions = { id = "org.jetbrains.kotlin.android.extensions", version = "jetbrainsKotlin" }
+jetbrains-dokka = { id = "org.jetbrains.dokka", version = "jetbrainsDokka" }
+android-application = { id = "com.android.application", version = "androidToolsBuildGradle" }
+android-library = { id = "com.android.library", version = "androidToolsBuildGradle" }
+dagger-hiltAndroid = { id = "dagger.hilt.android.plugin", version = "googleDagger" }
+google-googleServices = { id = "com.google.gms.google-services", version = "googleGms" }
+google-firebasePerf = { id = "com.google.firebase.firebase-perf", version = "googleFirebasePref" }
+google-firebaseCrashlytics = { id = "com.google.firebase.crashlytics", version = "googleFirebaseCrashlyticsGradle" }

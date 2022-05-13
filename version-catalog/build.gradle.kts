@@ -10,7 +10,7 @@ version = Configs.VERSION
 catalog {
     versionCatalog {
         from(files("../gradle/libs.versions.toml"))
-        // overwrite the "ethanette-gradle" version declared in the imported catalog
+        // overwrite the "ethanetteGradle" version declared in the imported catalog
         version("ethanetteGradle", Configs.VERSION)
     }
 }
