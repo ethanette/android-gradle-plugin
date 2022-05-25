@@ -241,7 +241,7 @@ jakewharton-timber-timber = { group = "com.jakewharton.timber", name = "timber",
 
 # com.squareup.okhttp3
 # https://mvnrepository.com/artifact/com.squareup.okhttp3
-squareup-okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "squareupOkhttp3" }
+squareup-okhttp3-okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "squareupOkhttp3" }
 squareup-okhttp3-loggingInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "squareupOkhttp3" }
 squareup-okhttp3-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "squareupOkhttp3" }
 
