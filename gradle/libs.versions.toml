@@ -74,6 +74,8 @@ androidXTestExt = "1.1.2"
 androidXEspresso = "3.4.0"
 # androidx.benchmark
 androidXBenchmark = "1.0.0"
+# androidx.room
+androidXRoom = "2.4.2"
 
 # com.github.bumptech.glide
 bumptechGlide = "4.12.0"
@@ -87,7 +89,13 @@ coil = "1.4.0"
 jakewhartonTimber = "5.0.1"
 
 # com.squareup.okhttp3
-squareupOkhttp3 = "3.12.13"
+squareupOkhttp3 = "okhttp:5.0.0-alpha.5"
+# com.squareup.moshi
+squareupMoshi = "1.13.0"
+# com.squareup.retrofit2
+squareupRetrofit2 = "2.9.0"
+# com.github.chuckerteam.chucker
+chuckerteamChucker = "3.5.2"
 
 # junit
 junit = "4.13.2"
@@ -196,6 +204,11 @@ androidx-biometric = { group = "androidx.biometric", name = "biometric", version
 androidx-camera-cameraCamera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "androidXCamera" }
 androidx-camera-cameraLifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "androidXCamera" }
 androidx-camera-cameraView = { group = "androidx.camera", name = "camera-view", version.ref = "androidXCameraView" }
+# https://mvnrepository.com/artifact/androidx.room
+androidx-room-roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "androidXRoom" }
+androidx-room-roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "androidXRoom" }
+
+
 # https://mvnrepository.com/artifact/androidx.test
 androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidXTest" }
 androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidXTest" }
@@ -229,11 +242,28 @@ jakewharton-timber-timber = { group = "com.jakewharton.timber", name = "timber",
 # com.squareup.okhttp3
 # https://mvnrepository.com/artifact/com.squareup.okhttp3
 squareup-okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "squareupOkhttp3" }
+squareup-okhttp3-loggingInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "squareupOkhttp3" }
 squareup-okhttp3-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "squareupOkhttp3" }
+
+# com.squareup.moshi
+# https://mvnrepository.com/artifact/com.squareup.moshi
+squareup-moshi-moshiKotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "squareupMoshi" }
+squareup-moshi-moshiKotlinCodegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "squareupMoshi" }
+
+# com.squareup.retrofit2
+# https://mvnrepository.com/artifact/com.squareup.retrofit2
+squareup-retrofit2-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "squareupRetrofit2" }
+squareup-retrofit2-converterMoshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "squareupRetrofit2" }
+
+# com.github.chuckerteam.chucker
+chuckerteam-chucker-library = { group = "com.github.chuckerteam.chucker", name = "library", version.ref = "chuckerteamChucker" }
+chuckerteam-chucker-library = { group = "com.github.chuckerteam.chucker", name = "library-no-op", version.ref = "chuckerteamChucker" }
+
 
 # junit
 # https://mvnrepository.com/artifact/junit/junit
 junit-junit = { group = "junit", name = "junit", version.ref = "junit" }
+
 
 [plugins]
 ethanette-androidApp = { id = "com.ethanette.android-app", version.ref = "ethanetteGradle" }
