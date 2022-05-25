@@ -89,7 +89,7 @@ coil = "1.4.0"
 jakewhartonTimber = "5.0.1"
 
 # com.squareup.okhttp3
-squareupOkhttp3 = "okhttp:5.0.0-alpha.5"
+squareupOkhttp3 = "5.0.0-alpha.5"
 # com.squareup.moshi
 squareupMoshi = "1.13.0"
 # com.squareup.retrofit2
@@ -257,8 +257,7 @@ squareup-retrofit2-converterMoshi = { group = "com.squareup.retrofit2", name = "
 
 # com.github.chuckerteam.chucker
 chuckerteam-chucker-library = { group = "com.github.chuckerteam.chucker", name = "library", version.ref = "chuckerteamChucker" }
-chuckerteam-chucker-library = { group = "com.github.chuckerteam.chucker", name = "library-no-op", version.ref = "chuckerteamChucker" }
-
+chuckerteam-chucker-libraryNoOp = { group = "com.github.chuckerteam.chucker", name = "library-no-op", version.ref = "chuckerteamChucker" }
 
 # junit
 # https://mvnrepository.com/artifact/junit/junit
